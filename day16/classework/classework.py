@@ -1,0 +1,1 @@
+print("the best academy is Goa")
