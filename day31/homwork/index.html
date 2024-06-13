@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+<body>
+
+<form id="registrationForm" action="submit.php" method="POST">
+
+  <!-- სახელი -->
+  <label for="firstName">სახელი:</label><br>
+  <input type="text" id="firstName" name="firstName" required><br><br>
+
+  <!-- გვარი -->
+  <label for="lastName">გვარი:</label><br>
+  <input type="text" id="lastName" name="lastName" required><br><br>
+
+  <!-- ემაილი -->
+  <label for="email">ემაილი:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <!-- პაროლი -->
+  <label for="password">პაროლი:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <!-- საჭმელების ჩამონათვალი -->
+  <label for="food">საჭმელების ჩამონათვალი:</label><br>
+  <select id="food" name="food" multiple>
+    <option value="pizza">პიცა</option>
+    <option value="burger">ბურგერი</option>
+    <option value="salad">სალათი</option>
+    <option value="sushi">სუში</option>
+  </select><br><br>
+
+  <!-- სპორტის სხვადასხვა სახეების ჩამონათვალი -->
+  <label for="sports">სპორტის სახეები:</label><br>
+  <select id="sports" name="sports" multiple>
+    <option value="football">ფეხბურთი</option>
+    <option value="basketball">კალათბურთი</option>
+    <option value="tennis">ჩოგბურთი</option>
+    <option value="jusdo">გასაფრთხილება</option>
+  </select><br><br>
+
+  <!-- მანქანების ჩამონათვალი -->
+  <label for="cars">მანქანები:</label><br>
+  <select id="cars" name="cars" multiple>
+    <option value="sedan">სედანი</option>
+    <option value="suv">SUV</option>
+    <option value="hatchback">ჰეჩბექი</option>
+    <option value="pickup">პიკაპი</option>
+  </select><br><br>
+
+  
+  <input type="submit" value="რეგისტრაცია">
+
+</form>
+
+</body>
+</html>

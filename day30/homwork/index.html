@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Cars List</title>
+</head>
+<body>
+    <h2>Favorite Cars List</h2>
+
+    
+    <form id="carForm">
+        <label for="car1">Car 1:</label>
+        <input type="text" id="car1" name="car1"><br><br>
+
+        <label for="car2">Car 2:</label>
+        <input type="text" id="car2" name="car2"><br><br>
+
+        <label for="car3">Car 3:</label>
+        <input type="text" id="car3" name="car3"><br><br>
+
+        <label for="car4">Car 4:</label>
+        <input type="text" id="car4" name="car4"><br><br>
+
+        <label for="car5">Car 5:</label>
+        <input type="text" id="car5" name="car5"><br><br>
+
+        <label for="undesiredCar">Car to Change:</label>
+        <input type="text" id="undesiredCar" name="undesiredCar"><br><br>
+
+        <label for="newCar">New Car Name:</label>
+        <input type="text" id="newCar" name="newCar"><br><br>
+
+        <button type="button" onclick="changeCar()">Change Car</button>
+    </form>
+
+    <hr>
+
+   
+    <div id="output">
+        <h3>All Cars:</h3>
+        <ul id="carList">
+          
+        </ul>
+    </div>
+
+ 
+    <script>
+        function changeCar() {
+            
+            var undesiredCar = document.getElementById("undesiredCar").value;
+            var newCar = document.getElementById("newCar").value;
+
+           
+            var cars = [
+                document.getElementById("car1").value,
+                document.getElementById("car2").value,
+                document.getElementById("car3").value,
+                document.getElementById("car4").value,
+                document.getElementById("car5").value
+            ];
+
+            
+            var index = cars.indexOf(undesiredCar);
+            if (index !== -1) {
+                cars[index] = newCar;
+            }
+
+            var carList = document.getElementById("carList");
+            carList.innerHTML = "";
+
+            cars.forEach(function(car) {
+                var li = document.createElement("li");
+                li.textContent = car;
+                carList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
