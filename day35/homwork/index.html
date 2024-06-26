@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goa Travel Guide</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header img {
-            width: 50px;
-            vertical-align: middle;
-        }
-        header nav {
-            display: inline-block;
-            margin: 0 20px;
-        }
-        header nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        header input[type="text"] {
-            padding: 5px;
-            width: 200px;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        footer a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-    </style>
+    <title>გოა - საოცრებების კუთხე</title>
+    <link rel="stylesheet" href="styles.css"> <!-- აქ შეგიძლიათ დაამატოთ თქვენი CSS ფაილი -->
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Site Logo">
+        <div class="logo">
+            <img src="logo.png" alt="საიტის ლოგო"> <!-- ლოგოს ფაილის მისამართი -->
+        </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#">მთავარი</a></li>
+                <li><a href="#">ვიდეოები</a></li>
+                <li><a href="#">სურათები</a></li>
+                <li><a href="#">სტატიები</a></li>
+                <li><a href="#">კონტაქტი</a></li>
+            </ul>
         </nav>
-        <input type="text" placeholder="Search...">
+        <div class="search-bar">
+            <input type="text" placeholder="ძებნა...">
+        </div>
     </header>
+
     <main>
         <article>
-            <h2>Welcome to Goa</h2>
-            <p>Goa is now the best academy in the world ...</p>
+            <h1>გოა: საოცრებების კუთხე</h1>
+            <p>გოა ინდოეთის პატარა, მაგრამ ძალიან საინტერესო შტატია...</p>
         </article>
-        <section>
-            <h2>Videos</h2>
-            <video width="320" height="240" controls>
-                <source src="https://www.youtube.com/watch?v=zMOE_vAr5u4" type="video/mp4">
+
+        <section class="videos">
+            <h2>ვიდეოები</h2>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4"> <!-- ვიდეოს ფაილის მისამართი -->
                 Your browser does not support the video tag.
             </video>
         </section>
-        <section>
-            <h2>Images</h2>
-            <img src="https://tse4.mm.bing.net/th?id=OIP.aZWMw6D96KxJtW9KmK2GBQHaFS&pid=Api&P=0&h=180" alt="Goa logo" width="300">
-            <img src="https://scontent.fctt1-1.fna.fbcdn.net/v/t39.30808-6/448907278_431261573215028_288606941460841539_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tmMyxfR0LMYQ7kNvgGhGLCa&_nc_ht=scontent.fctt1-1.fna&oh=00_AYCWXP9DrgWvNyU-jB7zepywaxRBdhdt4Ijb7ztuUSEYyw&oe=667CC3FD" alt="Goa Culture" width="300">
+
+        <section class="photos">
+            <h2>სურათები</h2>
+            <img src="photo1.jpg" alt="გოას სურათი"> <!-- სურათის ფაილის მისამართი -->
         </section>
-        <section>
-            <h2>Important Information</h2>
-            <p>Find the best places to visit in Goa...</p>
+
+        <section class="articles">
+            <h2>სტატიები</h2>
+            <article>
+                <h3>სტატია 1</h3>
+                <p>სტატიის ტექსტი...</p>
+            </article>
+            <article>
+                <h3>სტატია 2</h3>
+                <p>სტატიის ტექსტი...</p>
+            </article>
+        </section>
+
+        <section class="important-info">
+            <h2>მნიშვნელოვანი ინფორმაცია</h2>
+            <p>მნიშვნელოვანი ინფორმაცია გოაზე...</p>
         </section>
     </main>
+
     <footer>
-        <p>Follow us on:</p>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-        <p><a href="#top">Back to top</a></p>
-        <p>&copy; 2024 Goa Travel Guide. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <button onclick="scrollToTop()">თავში დაბრუნება</button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        </script>
+        <p>© 2024 ყველა უფლება დაცულია</p>
+        <ul class="terms">
+            <li><a href="#">პირობები</a></li>
+            <li><a href="#">კონფიდენციალურობა</a></li>
+        </ul>
     </footer>
 </body>
 </html>
+
