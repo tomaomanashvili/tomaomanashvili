@@ -1,10 +1,15 @@
-numbers = []
-for _ in range(10):
-    number = int(input("Enter a number: "))
-    numbers.append(number)
+def sum_of_multiples_of_five(numbers):
 
-two_digit_count = sum(1 for num in numbers if 10 <= num < 100)
-print("Number of two-digit numbers:", two_digit_count)
-numbers = [int(input("Enter a number: ")) for _ in range(10)]
-sum_of_multiples_of_five = sum(num for num in numbers if num % 5 == 0)
-print("Sum of multiples of five:", sum_of_multiples_of_five)
+    multiples_of_five = [num for num in numbers if num % 5 == 0]
+    
+    
+    total_sum = sum(multiples_of_five)
+    
+  
+    print("ხუთის ჯერადი რიცხვების ჯამი:", total_sum)
+
+
+numbers = [10, 21, 35, 40, 56, 70, 83, 95]
+
+
+sum_of_multiples_of_ffive(numbers) # type: ignore
