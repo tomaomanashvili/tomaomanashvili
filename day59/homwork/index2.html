@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .book-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .book {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to the Book Library</h1>
+        <p>Your gateway to knowledge and adventure</p>
+    </div>
+
+    <div class="book-list">
+        <div class="book">
+            <img src="book1.jpg" alt="">
+            <h2 style="color: #ff6347;">The Great Gatsby</h2> <!-- Inline CSS -->
+            <p>by F. Scott Fitzgerald</p>
+            <p><strong>Genre:</strong> Classic Fiction</p>
+        </div>
+        <div class="book">
+            <img src="book2.jpg" alt="">
+            <h2 style="color: #4682b4;">To Kill a Mockingbird</h2> <!-- Inline CSS -->
+            <p>by Harper Lee</p>
+            <p><strong>Genre:</strong> Historical Fiction</p>
+        </div>
+        <div class="book">
+            <img src="book3.jpg" alt=>
+            <h2 style="color: #32cd32;">1984</h2> <!-- Inline CSS -->
+            <p>by George Orwell</p>
+            <p><strong>Genre:</strong> Dystopian Fiction</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>  Book Library. </p>
+    </div>
+
+</body>
+</html>
