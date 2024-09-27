@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ხაზგასმული ტექსტის მაგალითები</title>
+    <style>
+        /* 1. ყველა ტექსტი ლურჯი ხაზგასმით */
+        .blue-underline {
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+        /* 2. ლინკის ხაზგასმა გამორთულია */
+        .no-underline {
+            text-decoration: none;
+        }
+        /* 3. ერთ-ერთი სიტყვა გადაკვეთილი ხაზით */
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        /* 4. ქვემოთ და ზემოთ ხაზგასმა */
+        .underline-overline {
+            text-decoration: underline overline;
+        }
+        /* 5. მხოლოდ სათაური ხაზგასმული */
+        h1 {
+            text-decoration: underline;
+        }
+        /* 6. სიტყვა "GOA" ხაზგასმული */
+        .goa-underline {
+            text-decoration: underline;
+        }
+        /* 7. ყველა ლინკს აქვს ტალღოვანი ხაზი */
+        a.wavy-underline {
+            text-decoration: underline wavy;
+        }
+        /* 8. ორმაგი ხაზგასმა პარაგრაფებისთვის */
+        .double-underline {
+            text-decoration: underline;
+            text-decoration-style: double;
+        }
+        /* 9. ყველა ლინკი წყვეტილი ხაზით */
+        a.dashed-underline {
+            text-decoration: underline dashed;
+        }
+        /* 10. ზედა ხაზგასმა (overline) და ქვედა ხაზგასმა (underline) */
+        .overline-underline {
+            text-decoration: underline overline;
+        }
+        /* 11. ჩახვეული ხაზგასმა */
+        .curly-underline {
+            text-decoration: underline wavy red;
+        }
+        /* 12. გაფართოებული ხაზგასმა */
+        .thick-underline {
+            text-decoration: underline;
+            text-decoration-thickness: thick;
+        }
+        /* 13. ლინკი წყვეტილი ხაზით */
+        a.dotted-underline {
+            text-decoration: underline dotted;
+        }
+        /* 14. სათაური წითელი ზედა და ლურჯი ქვედა ხაზით */
+        .colored-underline {
+            text-decoration: underline overline;
+            text-decoration-color: blue red;
+        }
+        /* 15. ვერტიკალური ხაზგასმა */
+        .vertical-underline {
+            writing-mode: vertical-rl;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. ლურჯი ხაზგასმული ტექსტი -->
+    <p class="blue-underline">სპორტული მანქანები, როგორიცაა BMW, Audi და Mercedes, საოცარია.</p>
+
+    <!-- 2. ლინკი ხაზგასმის გარეშე -->
+    <a href="#" class="no-underline">გაიგე მეტი BMW-ზე</a>
+
+    <!-- 3. ერთ-ერთი სიტყვა გადაკვეთილი ხაზით -->
+    <p>ჩემი ფავორიტი არის <span class="strikethrough">Ferrari</span>, მაგრამ BMW უკეთესია.</p>
+
+  
+    <p class="underline-overline">Mercedes და Audi წარმოადგენენ ფუფუნების მანქანებს.</p>
+
+    <h1>სპორტული მანქანები</h1>
+    <p>BMW, Audi და Mercedes ფუფუნების ბაზარზე დომინირებენ.</p>
+
+
+    <p>მე ვიმოგზაურე <span class="goa-underline">GOA</span>-ში გასულ წელს.</p>
+
+    
+    <a href="#" class="wavy-underline">გაიგე მეტი Audi-ს სპორტულ მოდელებზე</a>
+
+    
+    <p class="double-underline">Mercedes AMG-ს მოდელები ძალზედ ძლიერია.</p>
+
+    
+    <a href="#" class="dashed-underline">გაიგე მეტი BMW-ზე</a>
+
+
+    <p class="overline-underline">BMW, Audi და Mercedes ცნობილია როგორც ფუფუნების სიმბოლოები.</p>
+
+   
+    <p class="curly-underline">Audi-ს მანქანები ძალიან ელეგანტურია.</p>
+
+   
+    <p class="thick-underline">Mercedes ცნობილია თავისი ძრავებით და ძალით.</p>
+
+
+    <a href="#" class="dotted-underline">გაიგე მეტი Mercedes-ის მოდელებზე</a>
+
+   
+    <h1 class="colored-underline">ფუფუნების მანქანები</h1>
+
+    
+    <p class="vertical-underline">BMW-ს მოდელები ფუფუნების და სტილის სიმბოლოებია.</p>
+</body>
+</html>
