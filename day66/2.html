@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000px x 700px დივი</title>
+    <style>
+        .outer-div {
+            width: 1000px;
+            height: 700px;
+            background-color: darkblue;
+            position: relative;
+        }
+
+        .inner-div {
+            width: 50%;
+            height: 50%;
+            background-color: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer-div">
+        <div class="inner-div"></div>
+    </div>
+
+</body>
+</html>

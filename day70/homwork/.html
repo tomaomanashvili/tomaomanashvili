@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სარეგისტრაციო საიტი</title>
+    <style>
+        /* 1. ტექსტისთვის განსხვავებული ფერები და ჩრდილები */
+        h1 {
+            color: red;
+            text-shadow: 3px 3px 5px blue;
+        }
+
+        h2 {
+            color: green;
+            text-shadow: 2px 2px 6px yellow;
+        }
+
+        p {
+            color: purple;
+            text-shadow: 4px 4px 3px pink;
+        }
+
+        /* 2. ფოტოები და მათი ზომები */
+        .photo {
+            display: block;
+            margin: 10px;
+        }
+
+        #my-photo {
+            height: 100px;
+        }
+
+        #nika-photo {
+            height: 200px;
+        }
+
+        #goa-photo {
+            height: 300px;
+        }
+
+        /* 3. სარეგისტრაციო ფორმა */
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: lightblue;
+        }
+
+        input[type="text"]:nth-child(2) {
+            background-color: lightgreen;
+        }
+
+        input[type="password"] {
+            background-color: lightyellow;
+        }
+
+        input[type="email"] {
+            background-color: lightcoral;
+        }
+
+        button {
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ტექსტი განსხვავებული ფერებით და ჩრდილებით -->
+    <h1>ეს არის მთავარი სათაური</h1>
+    <h2>ეს არის მეორადი სათაური</h2>
+    <p>ეს არის ტესტი ტექსტი shadow ეფექტით.</p>
+
+    <!-- 2. ფოტოები ლინკებთან -->
+    <a href="https://www.facebook.com/your-profile" target="_blank">
+        <img id="my-photo" class="photo" src="your-photo.jpg" alt="თქვენი ფოტო">
+    </a>
+    <a href="https://www.facebook.com/nika-profile" target="_blank">
+        <img id="nika-photo" class="photo" src="nika-photo.jpg" alt="ბატონი ნიკას ფოტო">
+    </a>
+    <a href="https://www.goa.gov.in/" target="_blank">
+        <img id="goa-photo" class="photo" src="goa-photo.jpg" alt="გოა">
+    </a>
+
+    <!-- 3. სარეგისტრაციო ფორმა -->
+    <form>
+        <h2>რეგისტრაცია</h2>
+        <label>სახელი:</label>
+        <input type="text" placeholder="შეიყვანეთ სახელი">
+        <label>გვარი:</label>
+        <input type="text" placeholder="შეიყვანეთ გვარი">
+        <label>პაროლი:</label>
+        <input type="password" placeholder="შეიყვანეთ პაროლი">
+        <label>ელ.ფოსტა:</label>
+        <input type="email" placeholder="შეიყვანეთ ელ.ფოსტა">
+
+        <button type="submit">გაგზავნა</button>
+        <button type="reset">განულება</button>
+    </form>
+
+</body>
+</html>
